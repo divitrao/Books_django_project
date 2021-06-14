@@ -1,7 +1,10 @@
 {% extends '_base.html' %}
+{% load static %}
+
 {% block title %}Home{% endblock title %}
 {% block content %}
 <h1>Homepage</h1>
+<img class="covers" src="{% static 'images/background2.jpg' %}" >
 
 {% if user.is_authenticated %}
 hi  {{ user.email }}
